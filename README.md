@@ -1,12 +1,13 @@
-FormularioCRUD_Back-e
-Stack
-Node
-GraphQL
-Apollo-server
-Mongoose (e/ou Prisma) - pendente
-Bancos de dados
-MongoDB
-PostgreSQL, MySQL (a definir)
-Padrões de projeto
+# Nice Form - Back-end (under construction)
+Complete form created for study purposes using all form tags and various techniques.
 
-Strategy: para uso com vários tipos de bancos de dados
+## Stack
+- Node
+- GraphQL
+- Apollo-server
+- Mongoose
+- MongoDB
+
+## Business Rules
+
+## Next Steps
