@@ -13,11 +13,17 @@ export const typeDefs = `
     ok: Boolean
   }
 
+  type BlankResponse {
+    ok: Boolean
+    test: Boolean
+  }
+  
   type Query {
     getUsers: [User]
   }
 
   type Mutation {
     createUser(user: UserInput): NoAnswerOperation
+    deleteUser(userId: ID!): BlankResponse
   }
 `;

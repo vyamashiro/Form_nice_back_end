@@ -21,5 +21,11 @@ export const resolvers = {
         ok: true
       };
     },
+    async deleteUser(_, { userId }) {
+      await User.findByIdAndRemove(userId);
+      // await User.findByIdAndRemove(id, {
+      //   useFindAndModify: false
+      // });
+    },
   }
 };
