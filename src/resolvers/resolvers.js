@@ -27,5 +27,9 @@ export const resolvers = {
       //   useFindAndModify: false
       // });
     },
+    async updateUser(_, { userId, user }) {
+      const { name } = user
+      await User.findOneAndUpdate({ userId}, { name });
+    },
   }
 };

@@ -17,7 +17,7 @@ export const typeDefs = `
     ok: Boolean
     test: Boolean
   }
-  
+
   type Query {
     getUsers: [User]
   }
@@ -25,5 +25,9 @@ export const typeDefs = `
   type Mutation {
     createUser(user: UserInput): NoAnswerOperation
     deleteUser(userId: ID!): BlankResponse
+    updateUser(
+      userId: ID!, 
+      user: UserInput
+    ): NoAnswerOperation
   }
 `;
